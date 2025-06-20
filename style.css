@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background: #A9B5DF; /* Latar belakang ungu muda */
+    color: #2D336B;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar */
+.navbar {
+    background: #2D336B; /* Warna biru tua */
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #fff !important;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.stat-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+}
+
+.stat-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2D336B; /* Warna biru tua untuk judul */
+}
+
+.stat-value {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Table */
+.table-container {
+    margin-top: 40px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    background-color: #7886C7; /* Biru lebih terang untuk header tabel */
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.table img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #7886C7; /* Biru lebih terang untuk tombol utama */
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #2D336B; /* Warna biru tua saat dihover */
+    transform: scale(1.05);
+}
+
+.btn-danger {
+    background-color: #ff4d4d;
+    border: none;
+    padding: 8px 15px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #cc0000;
+}
+
+/* Tombol Tambah Siswa */
+.btn-tambah {
+    background-color: #4caf50; /* Warna hijau */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn-tambah:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.btn-tambah:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Styling Tombol Choose File */
+input[type="file"] {
+    display: none; /* Sembunyikan tombol default */
+}
+
+.custom-file-upload {
+    background-color: #7886C7; /* Biru lebih terang */
+    color: white;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.custom-file-upload:hover {
+    background-color: #2D336B; /* Warna biru tua saat dihover */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+}
+
+
